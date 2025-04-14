@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Poster</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: 'Arial', sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('./background.svg') no-repeat center center;
+      background-size: cover;
+      z-index: -1;
+    }
+
+    .quote {
+        width:clamp(50vw, 70vw, 90vw);
+        font-size:clamp(1rem, 2.5vw, 2.25rem);
+        display:block;
+        margin:auto;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem 1rem;
+     
+      font-style: italic;
+    }
+
+    .quote strong {
+      font-style: normal;
+      font-weight: bold;
+      display: block;
+      margin-top: 0.5rem;
+    }
+
+    .card-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: clamp(60vh, 60vh, 100vh);
+    }
+
+    .card-section img {
+      max-width: 70%;
+      max-height: 45vh;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    /* .event-info {
+        width:clamp(50vw, 70vw, 90vw);
+        display:block;
+        margin:auto;
+      position: fixed;
+      bottom: 1rem;
+      left: 1rem;
+      color: white;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    } */
+
+    .event-info {
+  width: clamp(50vw, 70vw, 90vw);
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: clamp(1rem, 2.5vw, 2.25rem);
+  line-height: 1.5;
+  margin-bottom:5rem;
+}
+
+    .event-info div {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .cta-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.get-now-btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  padding: clamp(1rem, 2.5vw, 1.75rem) clamp(2rem, 5vw, 4rem);
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.get-now-btn:hover {
+  transform: scale(1.08);
+  background-color: #4A90E2;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+
+    @media (max-width: 768px) {
+      .quote {
+        font-size: 1rem;
+        padding: 1.5rem 1rem 1rem;
+      }
+      
+      .card-section {
+        height: calc(100vh - 8rem);
+      }
+      
+      .event-info {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="quote">
+    "My own health scares and anxiety inspired 'Scan It. Code It. Own It.' Now I teach people to create tech that keeps them and their loved ones safe and in control."
+    <strong>— Amanda</strong>
+  </div>
+
+  <div class="card-section">
+    <img src="./emergency.png" alt="Emergency Card">
+  </div>
+
+  <div class="event-info">
+    <div class="cta-container">
+        <a href="https://www.eventbrite.co.uk/e/scan-it-code-it-own-it-tickets-1321096277529?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl" class="get-now-btn" target="_blank" rel="noopener noreferrer">Book Your Spot</a>
+      </div>
+      
+    <div>📅 19th April 2025</div>
+    <div>⏰ 1pm GMT</div>
+    <div>📍 Online Event</div>
+  </div>
+</body>
+</html>
