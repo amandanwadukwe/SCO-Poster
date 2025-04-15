@@ -59,7 +59,7 @@
 
     .card-section img {
       max-width: 70%;
-      max-height: 45vh;
+      max-height: 40vh;
       object-fit: contain;
       border-radius: 10px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.3);
@@ -86,7 +86,7 @@
   color: white;
   font-size: clamp(1rem, 2.5vw, 2.25rem);
   line-height: 1.5;
-  margin-bottom:2rem;
+  /* margin-bottom:2rem; */
 }
 
     .event-info div {
@@ -98,15 +98,17 @@
     .cta-container {
   display: flex;
   justify-content: flex-start;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top:.5rem;
+  /* margin-top: 2rem;
+  margin-bottom: 2rem; */
 }
 
 .get-now-btn {
+    width:45vw;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: clamp(1.5rem, 4vw, 2rem);
-  padding: clamp(1rem, 2.5vw, 1.75rem) clamp(2rem, 5vw, 4rem);
+  font-size: clamp(1rem, 2vw, 2rem);
+  padding: clamp(.5rem, 2vw, 1.75rem);
   background: linear-gradient(90deg, var(--primary), var(--accent));
   color: white;
   border: none;
@@ -132,7 +134,7 @@
       }
       
       .card-section {
-        height: calc(100vh - 8rem);
+        height: calc(100vh - 23rem);
       }
       
       .event-info {
@@ -152,13 +154,14 @@
   </div>
 
   <div class="event-info">
-    <div class="cta-container">
-        <a href="https://www.eventbrite.co.uk/e/scan-it-code-it-own-it-tickets-1321096277529?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl" class="get-now-btn" target="_blank" rel="noopener noreferrer">Book Your Spot</a>
-      </div>
+    
       
     <div>📅 19th April 2025</div>
     <div>⏰ 1pm GMT</div>
     <div>📍 Online Event</div>
+    <div class="cta-container">
+        <a href="https://www.eventbrite.co.uk/e/scan-it-code-it-own-it-tickets-1321096277529?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl" class="get-now-btn" target="_blank" rel="noopener noreferrer">Click to Book Your Spot</a>
+      </div>
   </div>
 </body>
 </html>
